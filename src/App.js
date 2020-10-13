@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Artist from './Components/Artist';
+import Home from './Components/Home';
+import ArtistForm from './Components/AtristForm';
+
+const App = () => {
+    return ( 
+        <BrowserRouter>
+           <Switch>
+            <Route path="/artists/add" component={ArtistForm}/>
+            <Route path="/artists/:id" component={Artist}/>
+            <Route exact path="/" component={Home}/>
+          </Switch>  
+        </BrowserRouter>
+     );
 }
-
+ 
 export default App;
