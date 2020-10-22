@@ -140,35 +140,6 @@
         }
       ],
       "genre": "Rock"
-    },
-    {
-      "name": "Amr Diab",
-      "bio": "hello this is my bio loool hhh ",
-      "cover": "amr_diab",
-      "albums": [
-        {
-          "albumId": "d1",
-          "title": "kol-hyati",
-          "year": 1979,
-          "cover": "kol-hyati",
-          "price": 20
-        },
-        {
-          "albumId": "d2",
-          "title": "meaddy-elnas",
-          "year": 1973,
-          "cover": "meaddy-elnas",
-          "price": 25
-        },
-        {
-          "albumId": "d3",
-          "title": "sahran",
-          "year": 1977,
-          "cover": "sahran",
-          "price": 15
-        }
-      ],
-      "id": 5
     }
   ]
 }
